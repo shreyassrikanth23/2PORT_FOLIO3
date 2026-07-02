@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Premium futuristic developer portfolio for Shreyas Srikanth.">
+  <title>Shreyas Srikanth | Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-lines"></div>
+    <div class="loader-core">
+      <span></span>
+      <span></span>
+      <span></span>
+      <div class="loader-mark">SS</div>
+    </div>
+    <p>INITIALIZING PORTFOLIO</p>
+  </div>
+
+  <canvas id="cursorCanvas" aria-hidden="true"></canvas>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="site-header">
+    <a href="#hero" class="brand magnetic" aria-label="Shreyas Srikanth home">SS</a>
+    <nav class="nav-pill" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <span class="system-status"><i></i> Available</span>
+      <a class="mini-cta magnetic" href="mailto:shreyassrikanth0711@gmail.com">Hire Me</a>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="hero section" id="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">AI Powered Developer</p>
+        <h1>Building Digital <span>Experiences</span></h1>
+        <p class="hero-intro">Motivated engineering student focused on software development, web technologies, machine learning fundamentals, and elegant problem-solving.</p>
+        <div class="hero-actions">
+          <a class="btn primary magnetic" href="#projects">View Projects</a>
+          <a class="btn ghost magnetic" href="#contact">Contact</a>
+        </div>
+        <div class="social-row">
+          <a href="https://github.com/shreyassrikanth23" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/shreyas-srikanth-014845411" target="_blank" rel="noreferrer">LinkedIn</a>
+          <span><i></i> Open to internships</span>
+        </div>
+      </div>
+
+      <div class="dashboard reveal" data-tilt>
+        <div class="dash-glow"></div>
+        <div class="dash-top">
+          <span></span><span></span><span></span>
+          <p>developer.os</p>
+        </div>
+        <div class="hero-photo-wrap">
+          <img src="assets/shreyas-hero.jpeg" alt="Shreyas Srikanth in a light blazer">
+        </div>
+        <div class="code-card float-a">
+          <p><b>const</b> builder = {</p>
+          <p>&nbsp;&nbsp;name: "Shreyas",</p>
+          <p>&nbsp;&nbsp;focus: "software",</p>
+          <p>&nbsp;&nbsp;status: "learning"</p>
+          <p>};</p>
+        </div>
+        <div class="metric-card float-b">
+          <span>Skill Matrix</span>
+          <div class="rings"><i></i><i></i><i></i></div>
+        </div>
+        <div class="bars-card float-c">
+          <span>Build Velocity</span>
+          <div class="bars">
+            <i style="--h:42%"></i><i style="--h:76%"></i><i style="--h:58%"></i><i style="--h:90%"></i><i style="--h:66%"></i>
+          </div>
+        </div>
+        <div class="ai-tag">AI CURSOR ACTIVE</div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="section-head reveal">
+        <p class="eyebrow">Profile Summary</p>
+        <h2>Student engineer with a builder mindset.</h2>
+      </div>
+      <div class="about-grid">
+        <article class="profile-card glass reveal">
+          <div class="avatar profile-photo">
+            <img src="assets/shreyas-profile.jpeg" alt="Portrait of Shreyas Srikanth">
+          </div>
+          <h3>Shreyas Srikanth</h3>
+          <p>Engineering Student | Aspiring Software Developer</p>
+          <a href="mailto:shreyassrikanth0711@gmail.com">shreyassrikanth0711@gmail.com</a>
+        </article>
+        <article class="bio-card glass reveal">
+          <p>Motivated and enthusiastic engineering student with a strong interest in software development, web technologies, and problem-solving. Skilled in programming fundamentals, teamwork, and communication with hands-on academic project experience. Passionate about learning new technologies and building innovative solutions.</p>
+          <div class="stats">
+            <div><strong data-count="3">0</strong><span>Projects</span></div>
+            <div><strong data-count="14">0</strong><span>Skills</span></div>
+            <div><strong data-count="4">0</strong><span>Certifications</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills">
+      <div class="section-head reveal">
+        <p class="eyebrow">Technical Stack</p>
+        <h2>Bento grid of tools, fundamentals, and creative systems.</h2>
+      </div>
+      <div class="bento">
+        <article class="bento-card large reveal">
+          <h3>Programming Core</h3>
+          <p>Python, C, Java basics, data structures basics, and problem decomposition.</p>
+          <div class="progress-list">
+            <label>Python <span>82%</span><i><b style="--w:82%"></b></i></label>
+            <label>C <span>72%</span><i><b style="--w:72%"></b></i></label>
+            <label>Java Basics <span>58%</span><i><b style="--w:58%"></b></i></label>
+          </div>
+        </article>
+        <article class="bento-card accent reveal">
+          <h3>Web</h3>
+          <p>HTML, CSS, JavaScript</p>
+          <div class="stack-cloud"><span>HTML</span><span>CSS</span><span>JS</span></div>
+        </article>
+        <article class="bento-card tall reveal">
+          <h3>Developer Tools</h3>
+          <ul>
+            <li>GitHub</li>
+            <li>VS Code</li>
+            <li>Jupyter Notebook</li>
+            <li>Linux Basics</li>
+          </ul>
+        </article>
+        <article class="bento-card reveal">
+          <h3>Data Systems</h3>
+          <p>MySQL, DBMS, machine learning fundamentals.</p>
+          <div class="mini-chart"><i></i><i></i><i></i><i></i></div>
+        </article>
+        <article class="bento-card reveal">
+          <h3>Soft Skills</h3>
+          <div class="chips">
+            <span>Communication</span><span>Leadership</span><span>Creativity</span><span>Adaptability</span><span>Time Management</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="section-head reveal">
+        <p class="eyebrow">Project Lab</p>
+        <h2>Academic builds shaped into polished product stories.</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card reveal" data-tilt>
+          <div class="preview radar"><i></i><i></i><i></i></div>
+          <h3>IoT Radar System</h3>
+          <p>Sensor-driven radar interface concept for detecting and visualizing nearby objects.</p>
+          <div><span>IoT</span><span>C</span><span>Electronics</span></div>
+        </article>
+        <article class="project-card reveal" data-tilt>
+          <div class="preview ml"><i></i><i></i><i></i><i></i></div>
+          <h3>Credit Card Approval Prediction</h3>
+          <p>Python machine learning workflow for predicting approval outcomes from structured data.</p>
+          <div><span>Python</span><span>ML</span><span>Jupyter</span></div>
+        </article>
+        <article class="project-card reveal" data-tilt>
+          <div class="preview editor"><i></i><i></i><i></i></div>
+          <h3>2D Editor</h3>
+          <p>Interactive editing environment exploring visual tools, shapes, and canvas-like controls.</p>
+          <div><span>JavaScript</span><span>UI</span><span>Canvas</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="certifications section" id="certifications">
+      <div class="section-head reveal">
+        <p class="eyebrow">Verified Learning</p>
+        <h2>Certifications aligned into a verified learning gallery.</h2>
+      </div>
+      <div class="cert-row">
+        <article class="cert-card reveal" data-tilt>
+          <a class="cert-preview" href="assets/ibm-data-visualization.jpeg" target="_blank" rel="noreferrer">
+            <img src="assets/ibm-data-visualization.jpeg" alt="IBM Data Visualization with Python certificate">
+          </a>
+          <div class="cert-meta">
+            <span class="cert-tag">IBM SkillsBuild</span>
+            <span>April 21, 2026</span>
+          </div>
+          <h3>Data Visualization with Python</h3>
+          <p>IBM certificate for completing Data Visualization with Python.</p>
+        </article>
+        <article class="cert-card reveal" data-tilt>
+          <a class="cert-preview" href="assets/ibm-python-101-data-science.jpeg" target="_blank" rel="noreferrer">
+            <img src="assets/ibm-python-101-data-science.jpeg" alt="IBM Python 101 for Data Science certificate">
+          </a>
+          <div class="cert-meta">
+            <span class="cert-tag">IBM SkillsBuild</span>
+            <span>April 23, 2026</span>
+          </div>
+          <h3>Python 101 for Data Science</h3>
+          <p>IBM certificate for Python fundamentals in the data science track.</p>
+        </article>
+        <article class="cert-card reveal" data-tilt>
+          <a class="cert-preview" href="assets/ibm-data-analysis-python.jpeg" target="_blank" rel="noreferrer">
+            <img src="assets/ibm-data-analysis-python.jpeg" alt="IBM Data Analysis with Python certificate">
+          </a>
+          <div class="cert-meta">
+            <span class="cert-tag">IBM SkillsBuild</span>
+            <span>April 21, 2026</span>
+          </div>
+          <h3>Data Analysis with Python</h3>
+          <p>IBM certificate for completing Data Analysis with Python.</p>
+        </article>
+        <article class="cert-card reveal" data-tilt>
+          <a class="cert-preview" href="assets/wadhwani-ignite-india.jpeg" target="_blank" rel="noreferrer">
+            <img src="assets/wadhwani-ignite-india.jpeg" alt="Wadhwani Foundation Ignite India certificate">
+          </a>
+          <div class="cert-meta">
+            <span class="cert-tag">Wadhwani Foundation</span>
+            <span>December 22, 2025</span>
+          </div>
+          <h3>Ignite India 5.0</h3>
+          <p>Certificate of content completion from Wadhwani Foundation.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="education section" id="education">
+      <div class="section-head reveal">
+        <p class="eyebrow">Education Timeline</p>
+        <h2>From foundation to engineering specialization.</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal"><span>2023</span><h3>SJV School</h3><p>10th</p></article>
+        <article class="timeline-item reveal"><span>2025</span><h3>BASE PU College</h3><p>2nd PUC</p></article>
+        <article class="timeline-item reveal"><span>2025-2029</span><h3>REVA University</h3><p>B.Tech in ISE</p></article>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact-panel reveal">
+        <div>
+          <p class="eyebrow">Contact Node</p>
+          <h2>Let's build something sharp.</h2>
+          <div class="contact-links">
+            <button data-copy="+91 9108750711">+91 9108750711</button>
+            <button data-copy="shreyassrikanth0711@gmail.com">Email</button>
+            <a href="https://github.com/shreyassrikanth23" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/shreyas-srikanth-014845411" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+        <form id="contactForm">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="Your email" required>
+          <textarea name="message" placeholder="Project idea" required></textarea>
+          <button class="btn primary magnetic" type="submit">Transmit Message</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="watermark">SUPER</p>
+      <a class="footer-cta magnetic" href="mailto:shreyassrikanth0711@gmail.com">Start a Conversation</a>
+      <div class="footer-socials">
+        <a href="https://github.com/shreyassrikanth23" target="_blank" rel="noreferrer">GH</a>
+        <a href="https://www.linkedin.com/in/shreyas-srikanth-014845411" target="_blank" rel="noreferrer">IN</a>
+      </div>
+      <p class="copyright">&copy; 2026 Shreyas Srikanth. Built with HTML, CSS, and Vanilla JavaScript.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
